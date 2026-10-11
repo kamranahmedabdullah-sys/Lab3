@@ -1,0 +1,7 @@
+{
+  "name": "nimbus-stock",
+  "version": "1.0.0",
+  "description": "CNS 303 Lab 03 - cloud inventory site (Netlify PaaS) with a script-built SQLite database",
+  "scripts": { "build": "node build.js" },
+  "dependencies": { "sql.js": "1.8.0" }
+}
