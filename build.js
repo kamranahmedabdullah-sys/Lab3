@@ -47,6 +47,7 @@ const initSqlJs = require('sql.js');
   const js = 'window.DB_B64="' + Buffer.from(db.export()).toString('base64') + '";';
   fs.writeFileSync('dist/inventory-data.js', js);
   fs.writeFileSync('inventory-data.js', js);
+  fs.writeFileSync('inventory.db', Buffer.from(db.export()));
 
   // Fallback for Vercel default output directory
   fs.mkdirSync('public', { recursive: true });
